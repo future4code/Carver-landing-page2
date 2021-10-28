@@ -4,9 +4,10 @@
 }
 
 #container-principal {
+    background: linear-gradient(orange, red, yellow) ;
     display: flex;
     flex-direction: column;
-    height: 320vh;
+    height: max-content;
     width: 100vw;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +15,7 @@
 }
 
 header {
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     height: 10vh;
     width: 100vw;
@@ -24,7 +25,7 @@ header {
 }
 
 main {
-    background-color: tomato;
+    /* background-color: tomato; */
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     width: 100vw;
@@ -39,19 +40,34 @@ main {
 }
 
 footer{
-    background-color: yellow;
-    display: flex;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
     height: 10vh;
     width: 100vw;
-    align-items: center;
-    justify-content: center;
+}
+
+.footer-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+}
+footer img{
+    width: 50px;
+}
+footer h4{
+    display: inline;
+    
 }
 
 #section-1{
-    background-color: white;
+    /* background-color: white; */
     height: 100%;
     width: 100%;
-    background-image: url("./img/pessoas.jpg");
+    /* background-image: url("./img/pessoas.jpg"); */
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
@@ -90,7 +106,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-    background-color: #F4A261;
+    /* background-color: #F4A261; */
 }
 
 #section-2 img{
@@ -117,7 +133,7 @@ footer{
     text-align: center;
 }
 #section-3{
-    background: linear-gradient(red, yellow);
+    /* background: linear-gradient(red, yellow); */
     height: 100%;
     width: 100%;
     display: grid;
@@ -159,7 +175,6 @@ a:hover{
     display: grid;
     justify-items: center;
     align-items: center;
-    height: 900px;
     width: 500px;
 }
 

@@ -56,9 +56,56 @@ footer{
 }
 
 #section-3{
-    background-color: white;
+    background: linear-gradient(red, yellow);
     height: 100%;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
 }
+
+.div-section3-left{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-section3-left p, h1, a{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div-section3-left h1{
+    font-size: 30px;
+}
+
+.div-section3-left a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:white;
+    
+}
+
+.div-section3-right{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 900px;
+    width: 500px;
+}
+
+.div-section3-right img{
+    width: 50%;;
+}
+
+
 
 

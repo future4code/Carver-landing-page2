@@ -49,12 +49,41 @@ footer{
 }
 
 #section-2{
-    background-color: black;
-    color: white;
     height: 100%;
     width: 100%;
 }
 
+#section-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    background-color: #F4A261;
+}
+
+#section-2 img{
+    width: 40vw;
+}
+
+#section-2 div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans';
+    letter-spacing: -0.02em;    
+}
+
+#section-2 h1{
+    font-size: 4em;
+}
+
+#section-2 P{
+    font-size: 1.5em;
+    text-align: center;
+}
 #section-3{
     background-color: white;
     height: 100%;

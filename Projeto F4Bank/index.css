@@ -16,24 +16,74 @@
     flex-wrap: wrap;
 }
 
+/* Estilo do header*/
 header {
-    /* background-color: yellow; */
+    background-color:white;
     display: flex;
-    height: 10vh;
+    flex-direction: row;
+    height: max-content;
     width: 100vw;
-    align-items: center;
-    justify-content: space-between;
+    align-content: center;
     position: fixed;
 }
 
+.div-header{
+    padding-top: 15px;
+    margin-left: 50px;
+}
+
+nav{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-left: 100px
+}
+
+.div-nav2{
+    
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-left: 200px;
+}
+
+header img{
+    width: 70px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    /* font-family: 'Lucida Sans', Geneva, Verdana, sans-serif; */
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: orange;
+}
+
+
+.div-nav2 button{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
+
+/* Estilo do main container*/
 main {
     /* background-color: tomato; */
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     width: 100vw;
-    height: 300vh;
-    justify-items: center;
-    align-items: center;
+    height: max-content;
 }
 
 #imagem-topo{
@@ -48,24 +98,12 @@ footer{
     justify-items: center;
     align-items: center;
     padding-bottom: 20px;
-    height: 10vh;
+    height: max-content;
     width: 100vw;
     align-items: end;
     justify-items: end;
     justify-content: space-between;
     
-}
-
-.footer-img{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: start;
-}
-footer img{
-    width: 50px;
-}
-footer h4{
-    display: inline; 
 }
 
 #section-1{
@@ -75,7 +113,6 @@ footer h4{
     background-repeat: no-repeat;
     background-position-x: 80%;
     background-position-y: 60%;
-
 }
 
 #section-1 > h1{
@@ -97,7 +134,7 @@ footer h4{
 }
 
 #section-2{
-    height: 100%;
+    height: max-content;
     width: 100%;
 }
 
@@ -113,17 +150,13 @@ footer h4{
     width: 40vw;
 }
 
-#section-2 div {
+.div-section2 {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    font-family: 'Lucida Sans';
-    letter-spacing: -0.02em;    
 }
-
+/* 
 #section-2 h1{
     font-size: 4em;
 }
@@ -131,11 +164,23 @@ footer h4{
 #section-2 P{
     font-size: 1.5em;
     text-align: center;
+} */
+
+.div-section2 p, h1, a{
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
+
+.div-section2 h1{
+    font-size: 2rem;
+}
+
 #section-3{
     /* background: linear-gradient(red, yellow); */
-    height: 100%;
-    width: 100%;
+    height: max-content;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
@@ -151,12 +196,12 @@ footer h4{
 .div-section3-left p, h1, a{
     text-align: center;
     margin: 20px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 .div-section3-left h1{
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .div-section3-left a{
@@ -168,7 +213,6 @@ footer h4{
 
 a:hover{
     color:white;
-    
 }
 
 .div-section3-right{
@@ -179,12 +223,46 @@ a:hover{
 }
 
 .div-section3-right img{
-    width: 50%;;
+    width: 65%;
 }
+
+/* Estilo do Footer */
+
+
+footer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: max-content;
+    width: 100vw;
+}
+
+.div-footer{
+    padding: 30px;
+}
+.div-footer p{
+    text-align: center;
+    margin: 20px;
+    font-size: 1rem;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+footer img{
+    width: 50px;
+}
+
+.footer-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+}
+
 
 /* botões */
 
-button {
+.button-section3 {
     border-radius: 4px;
     background-color: white;
     border: none;
@@ -203,7 +281,7 @@ button {
 button{
     cursor: pointer;
     display: inline-block;
-    position: relative;
+    /* position: relative; */
     transition: 0.5s;
 }
   
@@ -239,5 +317,6 @@ button:hover:after {
 .redes-sociais > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
 .redes-sociais:hover > * { opacity: 0.4; transform: scale(0.9); }
 .redes-sociais > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+
 
 

@@ -158,7 +158,7 @@
         border: 2px solid black;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-}
+    }
 
     .main-section1 img{
         width: 40vw;
@@ -173,6 +173,17 @@
     .main-section2 img{
         width: 30vw;
     }
+    /* mudando o grid de lugar */
+
+    .main-section2 img{
+        grid-row: 2;
+    }
+
+    .main-section2 #text {
+        grid-row: 1;
+    }
+
+    /*  */
     
     .main-section3{
         border: 2px solid black;

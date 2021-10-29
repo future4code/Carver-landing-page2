@@ -4,7 +4,7 @@
 }
 
 .main-container{
-    border: 2px solid black;
+
     background: linear-gradient(#f4a261, #e76f51, #e9c46a);
     display: flex;
     flex-direction:column;
@@ -13,27 +13,29 @@
 
 /* HEADER */
 .header{
-    border: 2px solid black;
+
     flex-grow: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 }
 
-.div-header-logo{
-    border: 2px solid black;
+.header{
+    
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background-color: white;
 }
+
 
 .div-header-logo img{
     width: 15vw;
 }
 
-.div-header-menu{
-    border: 2px solid black;
-}
-
 .div-header-botao{
-    border: 2px solid black;
+
     color: white;
     padding: 5px 15px;
     text-decoration: none;
@@ -43,10 +45,63 @@
     
 }
 
+
+header button{
+    font-size: larger;
+    background-color: black;
+    color: white;
+}
+
+button{
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 16px;
+    width: 180px;
+    height: 80px;
+    margin-top: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+button{
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+button:after {
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.div-header-menu button a {
+    text-decoration: none;
+    color: white;
+}
+
+
 /* SECTION */
 
 .main-section{
-    border: 2px solid black;
+
     flex-grow: 5;
     /* display: grid;
     grid-template-rows: repeat(3,1fr); */
@@ -54,7 +109,7 @@
 }
 
 .main-section1{
-    border: 2px solid black;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +123,7 @@
 /* FOOTER */
 
 .footer{
-    border: 2px solid black;
+
     flex-grow: 0;
     display: flex;
     flex-direction: column;
@@ -79,12 +134,12 @@
 
 
 .div-footer-p{
-    border: 2px solid black;
+
     flex-grow: 1;
 }
 
 .div-footer-redes-sociais{
-    border: 2px solid black;
+
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -94,6 +149,246 @@
 }
 
 .div-footer-copyright{
-    border: 2px solid black;
+
     flex-grow: 1;
 }
+
+
+header button{
+    font-size: larger;
+    background-color: black;
+    color: white;
+}
+
+button{
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 16px;
+    width: 180px;
+    height: 80px;
+    margin-top: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+button{
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+button:after {
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+}
+
+button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.footer{
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+    background-color: white;
+}
+
+
+.div-footer-p{
+  
+    flex-grow: 1;
+}
+
+.div-footer-redes-sociais{
+  
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.div-footer-redes-sociais img{
+    width: 10vw;
+}
+
+.div-footer-copyright{
+   
+    flex-grow: 1;
+}
+
+
+.div-footer-redes-sociais { visibility: hidden; }
+.div-footer-redes-sociais > * { visibility: visible; }
+.div-footer-redes-sociais > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+.div-footer-redes-sociais:hover > * { opacity: 0.4; transform: scale(0.9); }
+.div-footer-redes-sociais > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+
+@media screen and (min-device-width : 1200px) {
+    /* computadores */
+    
+    /* HEADER */
+    .header{
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: start;
+    }
+    
+  
+    
+    .div-header-logo img{
+        width: 8vw;
+    }
+
+    
+   
+    /* SECTION */
+
+    
+    
+    /* FOOTER */
+    
+    /* .footer{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: max-content;
+        /* width: max-content; */
+    
+    footer{
+        display: flex;
+        min-height: 1vh;
+        flex-direction: column;
+        
+    }
+    
+    
+    .div-footer-p{
+        color: black;
+        
+        /* flex-grow: 1; */
+    }
+    
+    .div-footer-redes-sociais{
+      
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    .div-footer-redes-sociais img{
+        width: 40px;
+    }
+    
+    .div-footer-copyright{
+        flex-grow: 1;
+        color: black;
+    }
+    
+    /* Botões */
+
+    header button{
+        font-size: larger;
+        background-color: black;
+        color: white;
+    }
+
+    button{
+        border-radius: 4px;
+        background-color: white;
+        border: none;
+        color: black;
+        text-align: center;
+        font-size: 28px;
+        padding: 16px;
+        width: 180px;
+        height: 80px;
+        margin-top: 8px;
+        transition: all 0.5s;
+        cursor: pointer;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    }
+    
+    button{
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    
+    button:after {
+        position: absolute;
+        opacity: 0;  
+        top: 14px;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    button:hover{
+        padding-right: 24px;
+        padding-left:8px;
+    }
+    
+    button:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+
+    /* .redes-sociais{
+        display: flex;
+    } */
+    /* efeitos redes sociais */
+
+    .div-footer-redes-sociais { visibility: hidden; }
+    .div-footer-redes-sociais > * { visibility: visible; }
+    .div-footer-redes-sociais > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+    .div-footer-redes-sociais:hover > * { opacity: 0.4; transform: scale(0.9); }
+    .div-footer-redes-sociais > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+
+    .footer{
+    
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: max-content;
+        background-color: white;
+    }
+    
+    
+    .div-footer-p{
+      
+        flex-grow: 1;
+    }
+    
+    .div-footer-redes-sociais{
+      
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    .div-footer-redes-sociais img{
+        width: 10vw;
+    }
+    
+    .div-footer-copyright{
+       
+        flex-grow: 1;
+    }
+    
+    }

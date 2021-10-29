@@ -22,17 +22,12 @@
     background-color: white;
 }
 
-.div-header-logo{
-  
-}
+
 
 .div-header-logo img{
     width: 15vw;
 }
 
-.div-header-menu{
-
-}
 
 /* .div-header-botao{
     border: 2px solid black;
@@ -130,17 +125,12 @@
         justify-items: start;
     }
     
-    .div-header-logo{
-   
-    }
+  
     
     .div-header-logo img{
         width: 8vw;
     }
-    
-    .div-header-menu{
 
-    }
     
    
     /* SECTION */

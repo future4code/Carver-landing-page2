@@ -25,6 +25,7 @@ header {
     width: 100vw;
     align-content: center;
     position: fixed;
+    flex-wrap: nowrap;
 }
 
 .div-header{
@@ -221,8 +222,7 @@ a:hover{
 }
 
 .div-section3-right img{
-    width: 65%;
-    
+    width: 20vw; 
 }
 
 /* Estilo do Footer */
@@ -234,16 +234,16 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    height: max-content;
     width: 100vw;
+    height: 20px;
 }
 
 .div-footer{
-    padding: 30px;
+    height: 14vh;
 }
 .div-footer p{
     text-align: center;
-    margin: 20px;
+    /* margin: 20px; */
     font-size: 1rem;
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
@@ -306,8 +306,6 @@ button:hover:after {
 
 .redes-sociais{
     display: flex;
-    justify-content: space-around;
-
 }
 /* efeitos redes sociais */
 
